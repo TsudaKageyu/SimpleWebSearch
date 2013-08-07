@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+  <Extern href="msobtnid.h"/>
+
+  <Commands package="GUID_Package">
+
+    <Groups>
+
+      <Group guid="GUID_Commands" id="ID_MenuGroup" priority="0x0000">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN"/>
+      </Group>
+      
+    </Groups>
+    
+    <Buttons>
+
+      <Button guid="GUID_Commands" id="ID_MenuItem" priority="0x0000" type="Button">
+        <Parent guid="GUID_Commands" id="ID_MenuGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>TextChanges</CommandFlag>
+        <Strings>
+          <CommandName>Search</CommandName>
+          <ButtonText>Search</ButtonText>
+        </Strings>
+      </Button>
+
+    </Buttons>
+   
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="GUID_Package"  value="{da557abd-6945-4daf-98f2-a254d988b905}" />
+    <GuidSymbol name="GUID_Commands" value="{f51e3850-97df-43ac-a3db-e0e44d363b88}">
+
+      <IDSymbol name="ID_MenuGroup" value="0x1000" />
+      <IDSymbol name="ID_MenuItem"  value="0x0100" />
+    </GuidSymbol>
+  </Symbols>
+
+</CommandTable>
