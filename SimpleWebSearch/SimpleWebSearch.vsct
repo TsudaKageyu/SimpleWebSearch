@@ -22,8 +22,8 @@
         <CommandFlag>DefaultInvisible</CommandFlag>
         <CommandFlag>TextChanges</CommandFlag>
         <Strings>
-          <CommandName>Search</CommandName>
-          <ButtonText>Search</ButtonText>
+          <CommandName>Simple Web Search</CommandName>
+          <ButtonText>Simple Web Search</ButtonText>
         </Strings>
       </Button>
 
