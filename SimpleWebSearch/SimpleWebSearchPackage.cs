@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel.Design;
 using System.Diagnostics;
+using System.Globalization;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Web;
@@ -29,39 +30,63 @@ namespace TsudaKageyu.SimpleWebSearch
         {
         }
 
+        private bool IsIdentifierChar(string s, int index)
+        {
+            // Rough check for the letter can be used in a C# identifier. 
+
+            if (index < 0 || s.Length - 1 < index)
+                return false;
+
+            if (Char.IsLetterOrDigit(s, index))
+                return true;
+
+            var category = Char.GetUnicodeCategory(s, index);
+
+            if (category == UnicodeCategory.ConnectorPunctuation)
+                return true;
+
+            if (category == UnicodeCategory.Format)
+                return true;
+
+            return false;
+        }
+
         private void UpdateQueryWord()
         {
             var dte = (EnvDTE.DTE)GetService(typeof(EnvDTE.DTE));
             var selection = (EnvDTE.TextSelection)dte.ActiveDocument.Selection;
             if (selection.IsEmpty)
             {
+                // Detect the query word if nothing is selected.
+
                 int line = selection.ActivePoint.Line;
                 int offset = selection.ActivePoint.LineCharOffset;
 
                 selection.SelectLine();
                 string text = selection.Text;
+                selection.MoveToLineAndOffset(line, offset);
 
-                int pos1 = offset - 1;
-                while (pos1 > 0)
+                if (IsIdentifierChar(text, offset - 2))
                 {
-                    char c = text[pos1 - 1];
-                    if (Char.IsWhiteSpace(c) || Char.IsPunctuation(c))
-                        break;
+                    // The caret is at the middle or the end of a word.
 
-                    pos1--;
+                    selection.WordLeft(false);
+                    selection.WordRight(true);
+                    queryWord = selection.Text.Trim();
                 }
-
-                int pos2 = offset - 2;
-                while (pos2 < text.Length - 1)
+                else if (IsIdentifierChar(text, offset - 1))
                 {
-                    char c = text[pos2 + 1];
-                    if (Char.IsWhiteSpace(c) || Char.IsPunctuation(c))
-                        break;
+                    // The caret is at the beginning of a word.
 
-                    pos2++;
+                    selection.WordRight(true);
+                    queryWord = selection.Text.Trim();
                 }
+                else
+                {
+                    // The caret is not in a word.
 
-                queryWord = text.Substring(pos1, pos2 - pos1 + 1).Trim();
+                    queryWord = "";
+                }
 
                 selection.MoveToLineAndOffset(line, offset);
             }
