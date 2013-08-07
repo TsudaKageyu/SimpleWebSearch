@@ -88,7 +88,7 @@ namespace TsudaKageyu.SimpleWebSearch {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://www.google.com/search?q=%QUERY%&amp;ie=UTF-8&amp;lr=lang_en.
+        ///   Looks up a localized string similar to https://www.google.com/search?q=%QUERY%&amp;ie=UTF-8&amp;hl=en&amp;lr=lang_en.
         /// </summary>
         internal static string DefaultSearchEngineURL {
             get {

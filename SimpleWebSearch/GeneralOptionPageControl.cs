@@ -78,7 +78,10 @@ namespace TsudaKageyu.SimpleWebSearch
             }
             set
             {
-                rbBuiltInBrowser.Checked = value;
+                if (value)
+                    rbBuiltInBrowser.Checked = true;
+                else
+                    rbDefaultBrowser.Checked = true;
             }
         }
 

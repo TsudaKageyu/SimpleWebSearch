@@ -127,7 +127,7 @@
     <value>Google</value>
   </data>
   <data name="DefaultSearchEngineURL" xml:space="preserve">
-    <value>https://www.google.com/search?q=%QUERY%&amp;ie=UTF-8&amp;lr=lang_en</value>
+    <value>https://www.google.com/search?q=%QUERY%&amp;ie=UTF-8&amp;hl=en&amp;lr=lang_en</value>
   </data>
   <data name="DefaultUseBuiltInBrowser" xml:space="preserve">
     <value>False</value>
