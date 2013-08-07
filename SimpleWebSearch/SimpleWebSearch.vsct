@@ -30,14 +30,51 @@
     </Buttons>
    
   </Commands>
+  
+  <CommandPlacements>
 
+    <CommandPlacement guid="GUID_Commands" id="ID_MenuGroup" priority="0x0000">
+      <Parent guid="HtmlEditorWindows" id="IDMX_HTM_SOURCE_BASIC"/>
+    </CommandPlacement>
+    <CommandPlacement guid="GUID_Commands" id="ID_MenuGroup" priority="0x0000">
+      <Parent guid="HtmlEditorWindows" id="IDMX_HTM_SOURCE_HTML"/>
+    </CommandPlacement>
+    <CommandPlacement guid="GUID_Commands" id="ID_MenuGroup" priority="0x0000">
+      <Parent guid="HtmlEditorWindows" id="IDMX_HTM_SOURCE_SCRIPT"/>
+    </CommandPlacement>
+    <CommandPlacement guid="GUID_Commands" id="ID_MenuGroup" priority="0x0000">
+      <Parent guid="CssEditorWindows" id="IDMX_HTM_SOURCE_CSS"/>
+    </CommandPlacement>
+    <CommandPlacement guid="GUID_Commands" id="ID_MenuGroup" priority="0x0000">
+      <Parent guid="XamlEditorWindows" id="IDMX_XAML_SOURCE_BASIC"/>
+    </CommandPlacement>
+  
+  </CommandPlacements>
+  
   <Symbols>
+  
     <GuidSymbol name="GUID_Package"  value="{da557abd-6945-4daf-98f2-a254d988b905}" />
+  
     <GuidSymbol name="GUID_Commands" value="{f51e3850-97df-43ac-a3db-e0e44d363b88}">
-
       <IDSymbol name="ID_MenuGroup" value="0x1000" />
       <IDSymbol name="ID_MenuItem"  value="0x0100" />
     </GuidSymbol>
+
+    <GuidSymbol name="HtmlEditorWindows" value="{d7e8c5e1-bdb8-11d0-9c88-0000f8040a53}">
+      <IDSymbol name="IDMX_HTM_SOURCE_BASIC" value="0x32" />
+      <IDSymbol name="IDMX_HTM_SOURCE_HTML" value="0x33" />
+      <IDSymbol name="IDMX_HTM_SOURCE_SCRIPT" value="0x34" />
+      <IDSymbol name="IDMX_HTM_SOURCE_ASMX_CODE_VB" value="0x39" />
+    </GuidSymbol>
+
+    <GuidSymbol name="CssEditorWindows" value="{A764E896-518D-11D2-9A89-00C04F79EFC3}">
+      <IDSymbol name="IDMX_HTM_SOURCE_CSS" value="0x0102"/>
+    </GuidSymbol>
+
+    <GuidSymbol name="XamlEditorWindows" value="{4C87B692-1202-46AA-B64C-EF01FAEC53DA}">
+      <IDSymbol name="IDMX_XAML_SOURCE_BASIC" value="0x0103"/>
+    </GuidSymbol>
+
   </Symbols>
 
 </CommandTable>
