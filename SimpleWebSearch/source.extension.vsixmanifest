@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Vsix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
   <Identifier Id="da557abd-6945-4daf-98f2-a254d988b905">
-    <Name>SimpleWebSearch</Name>
+    <Name>Simple Web Search</Name>
     <Author>Tsuda Kageyu</Author>
     <Version>1.0</Version>
     <Description xml:space="preserve">Instant web search from the code editor.</Description>
