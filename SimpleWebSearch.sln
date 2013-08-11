@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWebSearch", "SimpleWebSearch\SimpleWebSearch.csproj", "{87CA83F9-06EE-44E6-B1CB-62162DA47845}"
 EndProject
 Global
