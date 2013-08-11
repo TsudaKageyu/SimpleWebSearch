@@ -120,13 +120,13 @@
   <data name="ConfirmRestoreDefault" xml:space="preserve">
     <value>Are you sure to restore the default settings?</value>
   </data>
+  <data name="DefaultCaption" xml:space="preserve">
+    <value>Search Google for '%QUERY%'</value>
+  </data>
   <data name="DefaultCodePage" xml:space="preserve">
     <value>65001</value>
   </data>
-  <data name="DefaultSearchEngineName" xml:space="preserve">
-    <value>Google</value>
-  </data>
-  <data name="DefaultSearchEngineURL" xml:space="preserve">
+  <data name="DefaultURL" xml:space="preserve">
     <value>https://www.google.com/search?q=%QUERY%&amp;ie=UTF-8&amp;hl=en&amp;lr=lang_en</value>
   </data>
   <data name="DefaultUseBuiltInBrowser" xml:space="preserve">
@@ -134,8 +134,5 @@
   </data>
   <data name="ExtensionTitle" xml:space="preserve">
     <value>Simple Web Search</value>
-  </data>
-  <data name="MenuText" xml:space="preserve">
-    <value>Search "{0}" with {1}</value>
   </data>
 </root>

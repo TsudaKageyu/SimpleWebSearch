@@ -70,6 +70,15 @@ namespace TsudaKageyu.SimpleWebSearch {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Search Google for &apos;%QUERY%&apos;.
+        /// </summary>
+        internal static string DefaultCaption {
+            get {
+                return ResourceManager.GetString("DefaultCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 65001.
         /// </summary>
         internal static string DefaultCodePage {
@@ -79,20 +88,11 @@ namespace TsudaKageyu.SimpleWebSearch {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Google.
-        /// </summary>
-        internal static string DefaultSearchEngineName {
-            get {
-                return ResourceManager.GetString("DefaultSearchEngineName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to https://www.google.com/search?q=%QUERY%&amp;ie=UTF-8&amp;hl=en&amp;lr=lang_en.
         /// </summary>
-        internal static string DefaultSearchEngineURL {
+        internal static string DefaultURL {
             get {
-                return ResourceManager.GetString("DefaultSearchEngineURL", resourceCulture);
+                return ResourceManager.GetString("DefaultURL", resourceCulture);
             }
         }
         
@@ -111,15 +111,6 @@ namespace TsudaKageyu.SimpleWebSearch {
         internal static string ExtensionTitle {
             get {
                 return ResourceManager.GetString("ExtensionTitle", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Search &quot;{0}&quot; with {1}.
-        /// </summary>
-        internal static string MenuText {
-            get {
-                return ResourceManager.GetString("MenuText", resourceCulture);
             }
         }
     }

@@ -15,22 +15,22 @@ namespace TsudaKageyu.SimpleWebSearch
             get { return control; }
         }
 
-        public string SearchEngineName
+        public string Caption
         {
-            get { return control.SearchEngineName; }
-            set { control.SearchEngineName = value; }
+            get { return control.Caption; }
+            set { control.Caption = value; }
         }
 
-        public string SearchEngineURL
+        public string URL
         {
-            get { return control.SearchEngineURL; }
-            set { control.SearchEngineURL = value; }
+            get { return control.URL; }
+            set { control.URL = value; }
         }
 
-        public int QueryCodePage
+        public int CodePage
         {
-            get { return control.QueryCodePage; }
-            set { control.QueryCodePage = value; }
+            get { return control.CodePage; }
+            set { control.CodePage = value; }
         }
 
         public bool UseBuiltInBrowser

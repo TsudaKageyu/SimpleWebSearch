@@ -134,7 +134,7 @@ namespace TsudaKageyu.SimpleWebSearch
                     if (word.Length > 30)
                         word = word.Substring(0, 27) + "...";
 
-                    command.Text = String.Format(Resources.MenuText, word, options.SearchEngineName);
+                    command.Text = options.Caption.Replace("%QUERY%", word);
                     command.Visible = true;
                 }
                 else
@@ -156,8 +156,8 @@ namespace TsudaKageyu.SimpleWebSearch
             if (id == ID_MenuItem)
             {
                 var options = (GeneralOptionPage)GetDialogPage(typeof(GeneralOptionPage));
-                var encoding = Encoding.GetEncoding(options.QueryCodePage);
-                var url = options.SearchEngineURL.Replace(
+                var encoding = Encoding.GetEncoding(options.CodePage);
+                var url = options.URL.Replace(
                     "%QUERY%", HttpUtility.UrlEncode(queryWord, encoding));
 
                 if (!Uri.IsWellFormedUriString(url, UriKind.Absolute))

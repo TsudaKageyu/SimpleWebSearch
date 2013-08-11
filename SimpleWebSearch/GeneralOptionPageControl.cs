@@ -28,7 +28,7 @@ namespace TsudaKageyu.SimpleWebSearch
             }
         }
 
-        public string SearchEngineName
+        public string Caption
         {
             get
             {
@@ -40,7 +40,7 @@ namespace TsudaKageyu.SimpleWebSearch
             }
         }
 
-        public string SearchEngineURL
+        public string URL
         {
             get
             {
@@ -52,7 +52,7 @@ namespace TsudaKageyu.SimpleWebSearch
             }
         }
 
-        public int QueryCodePage
+        public int CodePage
         {
             get
             {
@@ -110,9 +110,9 @@ namespace TsudaKageyu.SimpleWebSearch
 
         private void RestoreDefault()
         {
-            SearchEngineName  = Resources.DefaultSearchEngineName;
-            SearchEngineURL   = Resources.DefaultSearchEngineURL;
-            QueryCodePage     = int.Parse(Resources.DefaultCodePage);
+            Caption  = Resources.DefaultCaption;
+            URL      = Resources.DefaultURL;
+            CodePage = int.Parse(Resources.DefaultCodePage);
             UseBuiltInBrowser = bool.Parse(Resources.DefaultUseBuiltInBrowser);
         }
 

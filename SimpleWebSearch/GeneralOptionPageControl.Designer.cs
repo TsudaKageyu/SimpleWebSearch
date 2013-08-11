@@ -132,36 +132,36 @@
             // 
             this.txtURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtURL.Location = new System.Drawing.Point(63, 43);
+            this.txtURL.Location = new System.Drawing.Point(108, 43);
             this.txtURL.Name = "txtURL";
-            this.txtURL.Size = new System.Drawing.Size(341, 19);
+            this.txtURL.Size = new System.Drawing.Size(296, 19);
             this.txtURL.TabIndex = 1;
             // 
             // label5
             // 
             this.label5.Location = new System.Drawing.Point(17, 43);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 19);
+            this.label5.Size = new System.Drawing.Size(69, 19);
             this.label5.TabIndex = 2;
-            this.label5.Text = "URL";
+            this.label5.Text = "Query URL";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label4
             // 
             this.label4.Location = new System.Drawing.Point(17, 18);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 19);
+            this.label4.Size = new System.Drawing.Size(85, 19);
             this.label4.TabIndex = 1;
-            this.label4.Text = "Name";
+            this.label4.Text = "Menu Caption";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtName
             // 
             this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtName.Location = new System.Drawing.Point(63, 18);
+            this.txtName.Location = new System.Drawing.Point(108, 18);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(341, 19);
+            this.txtName.Size = new System.Drawing.Size(296, 19);
             this.txtName.TabIndex = 0;
             // 
             // btnRestoreDefault
