@@ -1,7 +1,7 @@
 Simple Web Search
 =================
 
-An Extension for Visual Studio 2010, 2012 and 2013.  
+An Extension for Visual Studio 2010, 2012, 2013 and 2015.  
 Instant web search from the code editor.
 
 #### VSIX Package
