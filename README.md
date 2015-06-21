@@ -1,5 +1,3 @@
-[![endorse](https://api.coderwall.com/TsudaKageyu/endorsecount.png)](https://coderwall.com/TsudaKageyu)
-
 Simple Web Search
 =================
 
