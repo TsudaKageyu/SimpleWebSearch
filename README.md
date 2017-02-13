@@ -1,15 +1,30 @@
 Simple Web Search
 =================
 
-An Extension for Visual Studio 2012, 2013, 2015 and 2017.  
-Instant web search from the code editor.
+This is an extension for VS 2012, 2013, 2015 and 2017 which enables you to directly search the web from the context menu of Code or HTML editors. 
 
-#### VSIX Package
-~~VSIX Package is available in Visual Studio Gallery at:~~
+### How to use
 
-~~http://visualstudiogallery.msdn.microsoft.com/fab21632-c886-43f1-9af1-a3df0b23c2a5~~
+The usage is simple and straightforward:
 
-I am having trouble updating the gallery. So I release the latest package here:
+Right-click a word you want to look up. When nothing is selected, it automatically picks up a word.
+
+![How to search](https://github.com/TsudaKageyu/SimpleWebSearch/blob/master/images/search.png?raw=true "How to search")
+
+### Another search engine?
+
+Don't prefer Google? Feel free to use your favorite search engine.
+
+Select **[Tool]** - **[Options...]** from the menu bar, then **[Simple Web Search]**.
+
+![Options](https://github.com/TsudaKageyu/SimpleWebSearch/blob/master/images/options.png?raw=true "Options")
+
+or example, If you want to use MSDN Library. Change the settings like:
+
+Menu Caption = "Search MSDN Library for '%QUERY%'."
+
+Query URL = "http://social.msdn.microsoft.com/Search/en-US?query=%QUERY%&quot;
+
+### Download
 
 https://github.com/TsudaKageyu/SimpleWebSearch/releases/download/v1.2/SimpleWebSearch.vsix
-
