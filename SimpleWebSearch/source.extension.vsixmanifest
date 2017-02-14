@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="da557abd-6945-4daf-98f2-a254d988b905" Version="1.2" Language="en-US" Publisher="Tsuda Kageyu" />
+    <Identity Id="332016AB-DB7F-4D87-853F-01DDA325B40A" Version="1.2.1" Language="en-US" Publisher="Tsuda Kageyu" />
     <DisplayName>Simple Web Search</DisplayName>
     <Description xml:space="preserve">Instant web search from the code editor.</Description>
     <MoreInfo>https://github.com/TsudaKageyu/SimpleWebSearch</MoreInfo>
