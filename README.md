@@ -3,6 +3,10 @@ Simple Web Search
 
 This is an extension for VS 2012, 2013, 2015 and 2017 which enables you to directly search the web from the context menu of Code or HTML editors. 
 
+### Download
+
+The latest version of this extension is available at [Visual Studio Gallery](https://marketplace.visualstudio.com/items?itemName=Tsuda-Kageyu.SimpleWebSearch).
+
 ### How to use
 
 The usage is simple and straightforward:
